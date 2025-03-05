@@ -12,17 +12,24 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Wpfchik.Core;
 
 namespace Wpfchik.Pages
 {
-    /// <summary>
-    /// Логика взаимодействия для MainPage.xaml
-    /// </summary>
+
     public partial class MainPage : Page
     {
         public MainPage()
         {
             InitializeComponent();
+        }
+        private void BtnTask_Click(object sender, RoutedEventArgs e)
+        {
+            int sw = Convert.ToInt32(NumTask.Text);
+
+            SwitchToTask switchtask = new(sw);
+            switchtask.SwitchTask();
+            NumTask.Clear();
         }
     }
 }
