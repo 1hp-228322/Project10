@@ -35,7 +35,7 @@ namespace Project10.Classes
             return divisors;
         }
 
-        public List<int> GetGeneralDivider(int P, int Q)
+        public List<int> GetGeneralDivider()
         {
             List<int> dividers = GetDividers(Q);
             List<int> generalDevider = new List<int>();
@@ -48,12 +48,6 @@ namespace Project10.Classes
             }
 
             return generalDevider;
-        }
-
-        public string G1()
-        {
-
-            return ($"Делители числа {Q}, взаимно просты с {P}:" + (string.Join(" ", GetGeneralDivider(P, Q))));
         }
 
     }

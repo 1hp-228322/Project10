@@ -196,7 +196,7 @@ namespace ConsoleApp4
 
                     Class16 class16 = new Class16(q16, p16);
 
-                    List<int> generalDivider = class16.GetGeneralDivider(q16, p16);
+                    List<int> generalDivider = class16.GetGeneralDivider();
 
                     Console.WriteLine($"Делители числа {q16}, взаимно просты с {p16}:");
 
@@ -218,7 +218,10 @@ namespace ConsoleApp4
 
                         Console.WriteLine($"Простые делители чиса {n17}: ");
 
-                        
+                        foreach (int devider in pf)
+                        {
+                            Console.Write(devider + " ");
+                        }
 
                         Console.WriteLine();
                     }

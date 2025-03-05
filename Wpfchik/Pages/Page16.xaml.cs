@@ -34,9 +34,14 @@ namespace Wpfchik.Pages
             else
             {
                 //double G = Math.Exp(2 * Convert.ToDouble(TbY.Text)) + Math.Sin(Convert.ToDouble(Tbf.Text)) / Math.Log10(3.8 * Convert.ToDouble(TbY.Text) + Convert.ToDouble(Tbf.Text));
-                Class16 class16 = new Class16(q16, p16);(Convert.ToDouble(Tbm.Text), Convert.ToDouble(Tbn.Text));
+                Class16 class16 = new Class16(Convert.ToInt32(Tbm.Text), Convert.ToInt32(Tbn.Text));
 
-                MessageBox.Show((class16.(), MessageBoxButton.OK, MessageBoxImage.Information));
+                MessageBox.Show(($"Делители числа {Tbm.Text}, взаимно просты с {Tbn.Text}:"), "Системное сообщение", MessageBoxButton.OK, MessageBoxImage.Information);
+
+                foreach (int devider in class16.GetGeneralDivider())
+                {
+                    MessageBox.Show(devider + " ");
+                }
 
                 Tbm.Text = string.Empty;
                 Tbn.Text = string.Empty;
