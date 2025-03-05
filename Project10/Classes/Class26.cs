@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Project10.Classes
 {
-    internal class Class26
+    public class Class26
     {
         public List<int> GetOddNumbers()
         {

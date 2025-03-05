@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Project10.Classes
 {
-    class Class15
+    public class Class15
     {
         public bool B;
         List<double> result = new List<double>();

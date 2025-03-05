@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Project10.Classes
 {
-    class Class24
+    public class Class24
     {
         public int CalculateSum()
         {

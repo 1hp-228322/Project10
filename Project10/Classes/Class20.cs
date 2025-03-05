@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Project10.Classes
 {
-    class Class20
+    public class Class20
     {
         public long CalculateExpression(int n)
         {

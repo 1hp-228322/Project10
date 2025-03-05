@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Project10.Classes
 {
-    class Class27
+    public class Class27
     {
         public long CalculateProductOfCubes(int m, int n)
         {

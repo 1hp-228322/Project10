@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Project10.Classes
 {
-    class Class18
+    public class Class18
     {
         public List<int> GetFirst100Primes()
         {

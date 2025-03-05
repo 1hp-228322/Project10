@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Project10.Classes
 {
-    internal class Class28
+    public class Class28
     {
         private int SumOfDigits(int number)
         {

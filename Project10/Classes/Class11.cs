@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Project10.Classes
 {
-    class Class11
+    public class Class11
     {
         private double N, M;
 

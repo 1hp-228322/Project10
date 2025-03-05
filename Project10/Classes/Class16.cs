@@ -6,15 +6,19 @@ using System.Threading.Tasks;
 
 namespace Project10.Classes
 {
-    class Class16
+    public class Class16
     {
-        private int P;
-        private int Q;
+        private int P {  get; set; }
+        private int Q {  get; set; }
 
         public Class16(int p, int q)
         {
             P = p;
             Q = q;
+        }
+
+        public Class16()
+        {
         }
 
         public List<int> GetDividers(int q)

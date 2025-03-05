@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Project10.Classes
 {
-    class Class19
+    public class Class19
     {
         public long CalculateProductOfSquares(int m, int n)
         {

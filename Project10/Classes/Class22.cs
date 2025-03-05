@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Project10.Classes
 {
-    internal class Class22
+    public class Class22
     {
         public long CalculateSquareOfDifference(int m, int n)
         {

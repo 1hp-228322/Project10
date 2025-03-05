@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Project10.Classes
 {
-    class Class21
+    public class Class21
     {
         public long CalculateDifferenceOfCubes(int N)
         {
