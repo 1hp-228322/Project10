@@ -25,5 +25,19 @@ namespace Wpfchik.Pages
         {
             InitializeComponent();
         }
+
+        private void BtnTask11_Click(object sender, RoutedEventArgs e)
+        {
+                //double G = Math.Exp(2 * Convert.ToDouble(TbY.Text)) + Math.Sin(Convert.ToDouble(Tbf.Text)) / Math.Log10(3.8 * Convert.ToDouble(TbY.Text) + Convert.ToDouble(Tbf.Text));
+                Class12 class7 = new Class12();
+
+                MessageBox.Show($"Ответ = {class7.G1()}", "Системное сообщение", MessageBoxButton.OK, MessageBoxImage.Information);
+
+            
+
+        }
+        
+
+
     }
 }
