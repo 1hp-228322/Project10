@@ -281,7 +281,7 @@ namespace ConsoleApp4
                     {
                         Console.WriteLine($"Ошибка: {ex.Message}");
                     }
-
+                        
                     break;
 
                 case 20:

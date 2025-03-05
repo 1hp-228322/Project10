@@ -25,5 +25,21 @@ namespace Wpfchik.Pages
         {
             InitializeComponent();
         }
+
+        private void BtnTask11_Click(object sender, RoutedEventArgs e)
+        {
+            if (string.IsNullOrEmpty(Tbm.Text))
+            {
+                MessageBox.Show("Нет данных!", "Системное сообщение", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+            else
+            {
+                Class20 class20 = new Class20(Convert.ToInt32(Tbm.Text));
+
+                MessageBox.Show(($"Результат выражения для n = {Tbm.Text}: {class20.CalculateExpression()}"), "Системное сообщение", MessageBoxButton.OK, MessageBoxImage.Information);
+
+                Tbm.Text = string.Empty;
+            }
+        }
     }
 }
