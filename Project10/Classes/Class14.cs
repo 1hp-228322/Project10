@@ -6,7 +6,30 @@ using System.Threading.Tasks;
 
 namespace Project10.Classes
 {
-    internal class Class14
+    class Class14
     {
+        double M;
+
+        public Class14(double m)
+        {
+            M = m;
+        }
+
+        public string G1()
+        {
+            double V = 0;
+
+            if (M >= 100 && M <= 800)
+            {
+                V = (800 - 100) - M;
+                return $"Кол-во трехзначных чисел после М = {V}";
+            }
+            else
+            {
+                return "Число не входит в диапазон 100 - 800";
+            }
+            
+            
+        }
     }
 }

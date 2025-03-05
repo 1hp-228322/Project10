@@ -165,6 +165,28 @@ namespace ConsoleApp4
                     Console.ReadLine();
                     break;
 
+                case 14:
+
+                    Console.WriteLine("Введите целое число M");
+                    double N14 = int.Parse(Console.ReadLine());
+
+                    Class14 class14 = new Class14(N14);
+                    Console.WriteLine(class14.G1());
+
+                    Console.ReadLine();
+                    break;
+
+                case 15:
+
+                    Console.WriteLine("Введите целое число M");
+                    double N15 = int.Parse(Console.ReadLine());
+
+                    Class15 class15 = new Class15(N15);
+                    Console.WriteLine(class15.G1());
+
+                    Console.ReadLine();
+                    break;
+
                 case 16:
                     Console.WriteLine("Введите целове число p");
                     int p16 = Convert.ToInt32(Console.ReadLine());
