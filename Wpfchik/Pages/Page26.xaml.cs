@@ -25,5 +25,13 @@ namespace Wpfchik.Pages
         {
             InitializeComponent();
         }
+
+        private void BtnTask11_Click(object sender, RoutedEventArgs e)
+        {
+                Class26 class7 = new Class26();
+               
+                MessageBox.Show($"Ответ ={class7.GetOddNumbers()}", "Системное сообщение", MessageBoxButton.OK, MessageBoxImage.Information);
+            
+        }
     }
 }

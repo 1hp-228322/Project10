@@ -8,7 +8,11 @@ namespace Project10.Classes
 {
     public class Class26
     {
-        public List<int> GetOddNumbers()
+        public Class26() 
+        {
+
+        }
+        public string GetOddNumbers()
         {
             List<int> oddNumbers = new List<int>();
 
@@ -20,7 +24,7 @@ namespace Project10.Classes
                 }
             }
 
-            return oddNumbers;
+            return $"Нечетные числа от 100 до 200:{(string.Join(" ", oddNumbers))}";
         }
     }
 }

@@ -398,14 +398,9 @@ namespace ConsoleApp4
                     {
                         Class26 class26 = new Class26();
 
-                        List<int> oddNumbers = class26.GetOddNumbers();
 
                         Console.WriteLine("Нечетные числа от 100 до 200:");
-                        foreach (int number in oddNumbers)
-                        {
-                            Console.Write(number + " ");
-                        }
-                        Console.WriteLine();
+                        Console.WriteLine(class26.GetOddNumbers());
                     }
                     catch (Exception ex)
                     {
