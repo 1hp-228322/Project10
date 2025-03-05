@@ -9,6 +9,32 @@
       Title="Page4">
 
     <Grid>
-        
+
+        <StackPanel HorizontalAlignment="Center"
+                    VerticalAlignment="Center">
+
+            <StackPanel Orientation="Horizontal"
+            Margin="0 10 0 0">
+                <TextBlock Text="Введите N: "
+               FontSize="18"
+               FontWeight="Bold"/>
+                <TextBox Width="70"
+             x:Name="TbN1"
+             FontSize="18"/>
+            </StackPanel>
+
+            <StackPanel>
+                <Button Content="Ответ"
+                        Margin="0 10 0 0"
+                        FontSize="18"
+                        FontWeight="Bold"
+                        Cursor="Hand"
+                        x:Name="BtnTask11"
+                        Click="BtnTask11_Click"
+                        Background="Transparent"
+                        BorderBrush="Green"
+                        Padding="10"/>
+            </StackPanel>
+        </StackPanel>
     </Grid>
 </Page>
