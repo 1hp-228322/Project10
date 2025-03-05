@@ -28,7 +28,7 @@ namespace Project10.Classes
             return sum;
         }
 
-        public List<int> FindNumbers()
+        public string FindNumbers()
         {
             List<int> result = new List<int>();
 
@@ -41,7 +41,7 @@ namespace Project10.Classes
                 }
             }
 
-            return result;
+            return $"Числа меньше {N}, квадрат суммы цифр которых равен {M}:{(string.Join(" ", result))}";
         }
     }
 }

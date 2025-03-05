@@ -37,7 +37,7 @@ namespace Wpfchik.Pages
                 //double G = Math.Exp(2 * Convert.ToDouble(TbY.Text)) + Math.Sin(Convert.ToDouble(Tbf.Text)) / Math.Log10(3.8 * Convert.ToDouble(TbY.Text) + Convert.ToDouble(Tbf.Text));
                 Class28 class7 = new Class28(Convert.ToInt32(TbN1.Text), Convert.ToInt32(TbM1.Text));
 
-                MessageBox.Show($"Ответ = {class7.CalculateProductOfCubes()}", "Системное сообщение", MessageBoxButton.OK, MessageBoxImage.Information);
+                MessageBox.Show($"Ответ = {class7.FindNumbers()}", "Системное сообщение", MessageBoxButton.OK, MessageBoxImage.Information);
                 TbN1.Text = string.Empty;
                 TbM1.Text = string.Empty;
             }
