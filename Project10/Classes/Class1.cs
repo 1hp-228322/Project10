@@ -6,7 +6,21 @@ using System.Threading.Tasks;
 
 namespace Project10.Classes
 {
-    internal class Class1
+
+    class Class1
     {
+        private int N;
+        private double A;
+
+        public Class1(double a, int n)
+        {
+            A = a; N = n;
+        }
+
+        public string G1()
+        {
+            double V = Math.Pow(A, N);
+            return $"Ответ:{V}";
+        }
     }
 }
