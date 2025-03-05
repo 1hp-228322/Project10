@@ -25,5 +25,23 @@ namespace Wpfchik.Pages
         {
             InitializeComponent();
         }
+        private void BtnTask11_Click(object sender, RoutedEventArgs e)
+        {
+            if (string.IsNullOrEmpty(Tbm.Text) && string.IsNullOrEmpty(Tbn.Text))
+            {
+                MessageBox.Show("Нет данных!", "Системное сообщение", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+            else
+            {
+                //double G = Math.Exp(2 * Convert.ToDouble(TbY.Text)) + Math.Sin(Convert.ToDouble(Tbf.Text)) / Math.Log10(3.8 * Convert.ToDouble(TbY.Text) + Convert.ToDouble(Tbf.Text));
+                Class22 class22 = new Class22(Convert.ToInt32(Tbm.Text), Convert.ToInt32(Tbn.Text));
+
+                MessageBox.Show(($"Квадрат разности чисел от {Tbm.Text} до {Tbn.Text}: {class22.CalculateSquareOfDifference()}"), "Системное сообщение", MessageBoxButton.OK, MessageBoxImage.Information);
+
+
+                Tbm.Text = string.Empty;
+                Tbn.Text = string.Empty;
+            }
+        }
     }
 }

@@ -25,5 +25,6 @@ namespace Wpfchik.Pages
         {
             InitializeComponent();
         }
+        
     }
 }
