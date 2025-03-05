@@ -9,6 +9,25 @@
       Title="Page24">
 
     <Grid>
-        
+
+        <StackPanel HorizontalAlignment="Center"
+        VerticalAlignment="Center">
+
+            <StackPanel Orientation="Horizontal"
+Margin="0 10 0 0"/>
+
+            <StackPanel>
+                <Button Content="Ответ"
+            Margin="0 10 0 0"
+            FontSize="18"
+            FontWeight="Bold"
+            Cursor="Hand"
+            x:Name="BtnTask11"
+            Click="BtnTask11_Click"
+            Background="Transparent"
+            BorderBrush="Green"
+            Padding="10"/>
+            </StackPanel>
+        </StackPanel>
     </Grid>
 </Page>

@@ -25,5 +25,11 @@ namespace Wpfchik.Pages
         {
             InitializeComponent();
         }
+        private void BtnTask11_Click(object sender, RoutedEventArgs e)
+        {
+            Class24 class24 = new Class24();
+
+            MessageBox.Show(($"Сумма положительных чисел, кратных 4 и меньших 100: {class24.CalculateSum()}"), "Системное сообщение", MessageBoxButton.OK, MessageBoxImage.Information);
+        }
     }
 }

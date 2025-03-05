@@ -25,5 +25,11 @@ namespace Wpfchik.Pages
         {
             InitializeComponent();
         }
+        private void BtnTask11_Click(object sender, RoutedEventArgs e)
+        {
+            Class23 class23 = new Class23();
+
+            MessageBox.Show(($"Сумма отрицательных чисел, кратных 5 от -20 до 20: {class23.CalculateSum()}"), "Системное сообщение", MessageBoxButton.OK, MessageBoxImage.Information);
+        }
     }
 }
