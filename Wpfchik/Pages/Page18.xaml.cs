@@ -25,5 +25,10 @@ namespace Wpfchik.Pages
         {
             InitializeComponent();
         }
+
+        private void BtnTask11_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show(($"Простые делители чиса{}:"), "Системное сообщение", MessageBoxButton.OK, MessageBoxImage.Information);
+        }
     }
 }

@@ -10,7 +10,12 @@ namespace Project10.Classes
     {
         private int N;
 
-        public List<int> PrimeFactors(int N)
+        public Class17(int n)
+        {
+            N = n;
+        }
+
+        public List<int> PrimeFactors()
         {
             List<int> pf = new List<int>(N);
 
@@ -41,11 +46,6 @@ namespace Project10.Classes
             }
 
             return true;
-        }
-
-        public string G1()
-        {
-            return ($"Простые делители чиса {N}: " + (string.Join(" ", PrimeFactors(N))));
         }
     }
 }

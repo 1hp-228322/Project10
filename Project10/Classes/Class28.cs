@@ -8,6 +8,15 @@ namespace Project10.Classes
 {
     public class Class28
     {
+        private int N;
+        private int M;
+
+        public Class28(int n, int m)
+        {
+            N = n;
+            M = m;
+        }
+
         private int SumOfDigits(int number)
         {
             int sum = 0;
@@ -19,14 +28,14 @@ namespace Project10.Classes
             return sum;
         }
 
-        public List<int> FindNumbers(int n, int m)
+        public List<int> FindNumbers()
         {
             List<int> result = new List<int>();
 
-            for (int i = 1; i < n; i++)
+            for (int i = 1; i < N; i++)
             {
                 int sumDigits = SumOfDigits(i);
-                if (sumDigits * sumDigits == m)
+                if (sumDigits * sumDigits == M)
                 {
                     result.Add(i);
                 }

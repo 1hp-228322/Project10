@@ -25,5 +25,26 @@ namespace Wpfchik.Pages
         {
             InitializeComponent();
         }
+        private void BtnTask11_Click(object sender, RoutedEventArgs e)
+        {
+            if (string.IsNullOrEmpty(Tbm.Text))
+            {
+                MessageBox.Show("Нет данных!", "Системное сообщение", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+            else
+            {
+                //double G = Math.Exp(2 * Convert.ToDouble(TbY.Text)) + Math.Sin(Convert.ToDouble(Tbf.Text)) / Math.Log10(3.8 * Convert.ToDouble(TbY.Text) + Convert.ToDouble(Tbf.Text));
+                Class17 class17 = new Class17(Convert.ToInt32(Tbm.Text));
+
+                MessageBox.Show(($"Простые делители чиса{Tbm.Text}:"), "Системное сообщение", MessageBoxButton.OK, MessageBoxImage.Information);
+
+                foreach (int devider in class17.PrimeFactors())
+                {
+                    MessageBox.Show(devider + " ");
+                }
+
+                Tbm.Text = string.Empty;
+            }
+        }
     }
 }

@@ -8,7 +8,14 @@ namespace Project10.Classes
 {
     public class Class21
     {
-        public long CalculateDifferenceOfCubes(int N)
+        private int N;
+
+        public Class21(int n)
+        {
+            N = n;
+        }
+
+        public long CalculateDifferenceOfCubes()
         {
             long sumOfCubes = 0;
             long sumOfNumbers = 0;

@@ -8,21 +8,29 @@ namespace Project10.Classes
 {
     public class Class22
     {
-        public long CalculateSquareOfDifference(int m, int n)
+        private int M;
+        private int N;
+
+        public Class22(int m, int n) 
         {
-            if (m > n)
+            M = m; N = n;
+        }
+
+        public long CalculateSquareOfDifference()
+        {
+            if (M > N)
             {
                 throw new ArgumentException("m должно быть меньше или равно n");
             }
 
             long sum = 0;
 
-            for (int i = m; i <= n; i++)
+            for (int i = M; i <= N; i++)
             {
                 sum += i;
             }
 
-            long difference = n - m;
+            long difference = N - M;
             long squareOfDifference = difference * difference;
 
             return squareOfDifference;

@@ -213,8 +213,8 @@ namespace ConsoleApp4
                         Console.WriteLine("Введите целве число n");
                         int n17 = Convert.ToInt32(Console.ReadLine());
 
-                        Class17 class17 = new Class17();
-                        List<int> pf = class17.PrimeFactors(n17);
+                        Class17 class17 = new Class17(n17);
+                        List<int> pf = class17.PrimeFactors();
 
                         Console.WriteLine($"Простые делители чиса {n17}: ");
 
@@ -260,22 +260,22 @@ namespace ConsoleApp4
                     try
                     {
                         Console.Write("Введите значение m: ");
-                        int m = Convert.ToInt32(Console.ReadLine());
+                        int m19 = Convert.ToInt32(Console.ReadLine());
 
                         Console.Write("Введите значение n: ");
-                        int n = Convert.ToInt32(Console.ReadLine());
+                        int n19 = Convert.ToInt32(Console.ReadLine());
 
-                        if (m > n)
+                        if (m19 > n19)
                         {
                             Console.WriteLine("Ошибка: m должно быть меньше или равно n.");
                             return;
                         }
 
-                        Class19 class19 = new Class19();
+                        Class19 class19 = new Class19(m19, n19);
 
-                        long result = class19.CalculateProductOfSquares(m, n);
+                        long result = class19.CalculateProductOfSquares();
 
-                        Console.WriteLine($"Произведение квадратов четных чисел в интервале [{m}, {n}]: {result}");
+                        Console.WriteLine($"Произведение квадратов четных чисел в интервале [{m19}, {n19}]: {result}");
                     }
                     catch (Exception ex)
                     {
@@ -288,13 +288,13 @@ namespace ConsoleApp4
                     try
                     {
                         Console.Write("Введите натуральное число n: ");
-                        int n = Convert.ToInt32(Console.ReadLine());
+                        int n20 = Convert.ToInt32(Console.ReadLine());
 
-                        Class20 class20 = new Class20();
+                        Class20 class20 = new Class20(n20);
 
-                        long result = class20.CalculateExpression(n);
+                        long result = class20.CalculateExpression();
 
-                        Console.WriteLine($"Результат выражения для n = {n}: {result}");
+                        Console.WriteLine($"Результат выражения для n = {n20}: {result}");
                     }
                     catch (Exception ex)
                     {
@@ -307,13 +307,13 @@ namespace ConsoleApp4
                     try
                     {
                         Console.Write("Введите количество нечетных чисел N: ");
-                        int N = Convert.ToInt32(Console.ReadLine());
+                        int n21 = Convert.ToInt32(Console.ReadLine());
 
-                        Class21 class21 = new Class21();
+                        Class21 class21 = new Class21(n21);
 
-                        long result = class21.CalculateDifferenceOfCubes(N);
+                        long result = class21.CalculateDifferenceOfCubes();
 
-                        Console.WriteLine($"Разность кубов {N} нечетных чисел: {result}");
+                        Console.WriteLine($"Разность кубов {n21} нечетных чисел: {result}");
                     }
                     catch (Exception ex)
                     {
@@ -326,16 +326,16 @@ namespace ConsoleApp4
                     try
                     {
                         Console.Write("Введите значение m: ");
-                        int m = Convert.ToInt32(Console.ReadLine());
+                        int m22 = Convert.ToInt32(Console.ReadLine());
 
                         Console.Write("Введите значение n: ");
-                        int n = Convert.ToInt32(Console.ReadLine());
+                        int n22 = Convert.ToInt32(Console.ReadLine());
 
-                        Class22 class22 = new Class22();
+                        Class22 class22 = new Class22(m22, n22);
 
-                        long result = class22.CalculateSquareOfDifference(m, n);
+                        long result = class22.CalculateSquareOfDifference();
 
-                        Console.WriteLine($"Квадрат разности чисел от {m} до {n}: {result}");
+                        Console.WriteLine($"Квадрат разности чисел от {m22} до {n22}: {result}");
                     }
                     catch (Exception ex)
                     {
@@ -379,13 +379,13 @@ namespace ConsoleApp4
                     try
                     {
                         Console.Write("Введите натуральное число N: ");
-                        int N = Convert.ToInt32(Console.ReadLine());
+                        int n25 = Convert.ToInt32(Console.ReadLine());
 
-                        Class25 class25 = new Class25();
+                        Class25 class25 = new Class25(n25);
 
-                        long result = class25.CalculateDifferenceOfSquares(N);
+                        long result = class25.CalculateDifferenceOfSquares();
 
-                        Console.WriteLine($"Разность квадратов всех чисел от 1 до {N}: {result}");
+                        Console.WriteLine($"Разность квадратов всех чисел от 1 до {n25}: {result}");
                     }
                     catch (Exception ex)
                     {
@@ -418,22 +418,22 @@ namespace ConsoleApp4
                     try
                     {
                         Console.Write("Введите значение m: ");
-                        int m = Convert.ToInt32(Console.ReadLine());
+                        int m27 = Convert.ToInt32(Console.ReadLine());
 
                         Console.Write("Введите значение n: ");
-                        int n = Convert.ToInt32(Console.ReadLine());
+                        int n27 = Convert.ToInt32(Console.ReadLine());
 
-                        if (m > n)
+                        if (m27 > n27)
                         {
                             Console.WriteLine("Ошибка: m должно быть меньше или равно n.");
                             return;
                         }
 
-                        Class27 class27 = new Class27();
+                        Class27 class27 = new Class27(m27, n27);
 
-                        long result = class27.CalculateProductOfCubes(m, n);
+                        long result = class27.CalculateProductOfCubes();
 
-                        Console.WriteLine($"Произведение кубов чисел от {m} до {n}: {result}");
+                        Console.WriteLine($"Произведение кубов чисел от {m27} до {n27}: {result}");
                     }
                     catch (Exception ex)
                     {
@@ -445,16 +445,16 @@ namespace ConsoleApp4
                     try
                     {
                         Console.Write("Введите натуральное число n: ");
-                        int n = Convert.ToInt32(Console.ReadLine());
+                        int n28 = Convert.ToInt32(Console.ReadLine());
 
                         Console.Write("Введите натуральное число m: ");
-                        int m = Convert.ToInt32(Console.ReadLine());
+                        int m28 = Convert.ToInt32(Console.ReadLine());
 
-                        Class28 class28 = new Class28();
+                        Class28 class28 = new Class28(n28, m28);
 
-                        List<int> result = class28.FindNumbers(n, m);
+                        List<int> result = class28.FindNumbers();
                                 
-                        Console.WriteLine($"Числа меньше {n}, квадрат суммы цифр которых равен {m}:");
+                        Console.WriteLine($"Числа меньше {n28}, квадрат суммы цифр которых равен {m28}:");
                         foreach (int number in result)
                         {
                             Console.Write(number + " ");
@@ -472,22 +472,22 @@ namespace ConsoleApp4
                     try
                     {
                         Console.Write("Введите значение m: ");
-                        int m = Convert.ToInt32(Console.ReadLine());
+                        int m29 = Convert.ToInt32(Console.ReadLine());
 
                         Console.Write("Введите значение n: ");
-                        int n = Convert.ToInt32(Console.ReadLine());
+                        int n29 = Convert.ToInt32(Console.ReadLine());
 
-                        if (m > n)
+                        if (m29 > n29)
                         {
                             Console.WriteLine("Ошибка: m должно быть меньше или равно n.");
                             return;
                         }
 
-                        Class19 class19 = new Class19();
+                        Class19 class19 = new Class19(m29, n29);
 
-                        long result = class19.CalculateProductOfSquares(m, n);
+                        long result = class19.CalculateProductOfSquares();
 
-                        Console.WriteLine($"Произведение квадратов нечетных чисел в интервале [{m}, {n}]: {result}");
+                        Console.WriteLine($"Произведение квадратов нечетных чисел в интервале [{m29}, {n29}]: {result}");
                     }
                     catch (Exception ex)
                     {
@@ -500,22 +500,22 @@ namespace ConsoleApp4
                     try
                     {
                         Console.Write("Введите значение m: ");
-                        int m = Convert.ToInt32(Console.ReadLine());
+                        int m30 = Convert.ToInt32(Console.ReadLine());
 
                         Console.Write("Введите значение n: ");
-                        int n = Convert.ToInt32(Console.ReadLine());
+                        int n30 = Convert.ToInt32(Console.ReadLine());
 
-                        if (m > n)
+                        if (m30 > n30)
                         {
                             Console.WriteLine("Ошибка: m должно быть меньше или равно n.");
                             return;
                         }
 
-                        Class19 class19 = new Class19();
+                        Class19 class19 = new Class19(m30, n30);
 
-                        long result = class19.CalculateProductOfSquares(m, n);
+                        long result = class19.CalculateProductOfSquares();
 
-                        Console.WriteLine($"Произведение квадратов нечетных чисел в интервале [{m}, {n}]: {result}");
+                        Console.WriteLine($"Произведение квадратов нечетных чисел в интервале [{m30}, {n30}]: {result}");
                     }
                     catch (Exception ex)
                     {
