@@ -6,7 +6,21 @@ using System.Threading.Tasks;
 
 namespace Project10.Classes
 {
-    internal class Class30
+    class Class30
     {
+        public long CalculateProductOfSquares(int m, int n)
+        {
+            long product = 1;
+
+            for (int i = m; i <= n; i++)
+            {
+                if (i % 2 == 0)
+                {
+                    product += i * i;
+                }
+            }
+
+            return product;
+        }
     }
 }

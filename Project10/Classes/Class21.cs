@@ -6,7 +6,21 @@ using System.Threading.Tasks;
 
 namespace Project10.Classes
 {
-    internal class Class21
+    class Class21
     {
+        public long CalculateDifferenceOfCubes(int N)
+        {
+            long sumOfCubes = 0;
+            long sumOfNumbers = 0;
+
+            for (int i = 1; i <= N; i++)
+            {
+                int oddNumber = 2 * i - 1;
+                sumOfNumbers += oddNumber;
+                sumOfCubes += oddNumber * oddNumber * oddNumber;
+            }
+
+            return sumOfCubes - sumOfNumbers;
+        }
     }
 }
