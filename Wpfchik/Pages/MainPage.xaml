@@ -8,7 +8,46 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="MainPage">
 
-    <Grid>
-        
+    <Grid Background="AntiqueWhite">
+        <StackPanel HorizontalAlignment="Center"
+          VerticalAlignment="Center"
+          Margin="0 0 0 100"/>
+
+        <StackPanel HorizontalAlignment="Center"
+  VerticalAlignment="Top"
+  Orientation="Horizontal" Margin="0,20,0,0">
+            <TextBlock Text="Работу выполнили: Павлюхин,Головин,Ищенко."
+     FontSize="20"
+     FontWeight="Bold"/>
+        </StackPanel>
+
+        <StackPanel HorizontalAlignment="Center"
+          VerticalAlignment="Top"
+          Orientation="Horizontal" Margin="0,181,0,0">
+            <TextBlock Text="Введите номер задания 1-30: "
+             FontSize="20"
+             FontWeight="Bold"/>
+            <TextBox x:Name="NumTask"
+           Width="100"
+           FontSize="20"/>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Center"
+          VerticalAlignment="Top"
+          Margin="0,230,0,0">
+            <Button Content="Перейти к заданию"
+          FontSize="18"
+          FontWeight="Bold"
+          Cursor="Hand"
+          x:Name="BtnTask"
+          Click="BtnTask_Click"
+          Background="LightGreen"
+          Padding="12">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="10"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+        </StackPanel>
     </Grid>
 </Page>
