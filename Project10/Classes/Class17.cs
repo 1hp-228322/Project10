@@ -42,5 +42,10 @@ namespace Project10.Classes
 
             return true;
         }
+
+        public string G1()
+        {
+            return ($"Простые делители чиса {N}: " + (string.Join(" ", PrimeFactors(N))));
+        }
     }
 }

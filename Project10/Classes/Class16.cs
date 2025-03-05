@@ -8,8 +8,8 @@ namespace Project10.Classes
 {
     public class Class16
     {
-        private int P {  get; set; }
-        private int Q {  get; set; }
+        private int P;
+        private int Q;
 
         public Class16(int p, int q)
         {
@@ -48,6 +48,12 @@ namespace Project10.Classes
             }
 
             return generalDevider;
+        }
+
+        public string G1()
+        {
+
+            return ($"Делители числа {Q}, взаимно просты с {P}:" + (string.Join(" ", GetGeneralDivider(P, Q))));
         }
 
     }

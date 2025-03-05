@@ -218,10 +218,7 @@ namespace ConsoleApp4
 
                         Console.WriteLine($"Простые делители чиса {n17}: ");
 
-                        foreach (int devider in pf)
-                        {
-                            Console.Write(devider + " ");
-                        }
+                        
 
                         Console.WriteLine();
                     }

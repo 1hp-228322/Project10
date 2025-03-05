@@ -27,20 +27,19 @@ namespace Wpfchik.Pages
         }
         private void BtnTask11_Click(object sender, RoutedEventArgs e)
         {
-            if (string.IsNullOrEmpty(TbA1.Text) && string.IsNullOrEmpty(TbB1.Text) && string.IsNullOrEmpty(TbB1.Text))
+            if (string.IsNullOrEmpty(Tbm.Text) && string.IsNullOrEmpty(Tbn.Text))
             {
                 MessageBox.Show("Нет данных!", "Системное сообщение", MessageBoxButton.OK, MessageBoxImage.Error);
             }
             else
             {
                 //double G = Math.Exp(2 * Convert.ToDouble(TbY.Text)) + Math.Sin(Convert.ToDouble(Tbf.Text)) / Math.Log10(3.8 * Convert.ToDouble(TbY.Text) + Convert.ToDouble(Tbf.Text));
-                Class16 class16 = new Class16();
+                Class16 class16 = new Class16(q16, p16);(Convert.ToDouble(Tbm.Text), Convert.ToDouble(Tbn.Text));
 
-                MessageBox.Show((myTask1Class.IsOnlyOneEven(), MessageBoxButton.OK, MessageBoxImage.Information);
+                MessageBox.Show((class16.(), MessageBoxButton.OK, MessageBoxImage.Information));
 
-                TbA1.Text = string.Empty;
-                TbB1.Text = string.Empty;
-                TbC1.Text = string.Empty;
+                Tbm.Text = string.Empty;
+                Tbn.Text = string.Empty;
             }
         }
     }
