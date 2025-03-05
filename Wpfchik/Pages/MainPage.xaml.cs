@@ -27,8 +27,8 @@ namespace Wpfchik.Pages
         {
             int sw = Convert.ToInt32(NumTask.Text);
 
-            SwitchToTask switchtask = new(sw);
-            switchtask.SwitchTask();
+            SwitchToTask choice = new SwitchToTask(Convert.ToInt32(NumTask.Text));
+            choice.SwitchTask();
             NumTask.Clear();
         }
     }

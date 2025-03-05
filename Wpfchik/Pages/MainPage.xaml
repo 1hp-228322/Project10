@@ -29,7 +29,7 @@
              FontWeight="Bold"/>
             <TextBox x:Name="NumTask"
            Width="100"
-           FontSize="20"/>
+           FontSize="20" TextChanged="NumTask_TextChanged"/>
         </StackPanel>
         <StackPanel HorizontalAlignment="Center"
           VerticalAlignment="Top"
