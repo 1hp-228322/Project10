@@ -446,15 +446,9 @@ namespace ConsoleApp4
                         int m28 = Convert.ToInt32(Console.ReadLine());
 
                         Class28 class28 = new Class28(n28, m28);
-
-                        List<int> result = class28.FindNumbers();
-                                
-                        Console.WriteLine($"Числа меньше {n28}, квадрат суммы цифр которых равен {m28}:");
-                        foreach (int number in result)
-                        {
-                            Console.Write(number + " ");
-                        }
-                        Console.WriteLine();
+                      
+                        Console.WriteLine($"{class28.FindNumbers()}");
+                        
                     }
                     catch (Exception ex)
                     {
