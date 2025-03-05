@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Wpfchik.Core;
+using Wpfchik.Pages;
 
 namespace Wpfchik
 {
@@ -23,6 +25,9 @@ namespace Wpfchik
         public MainWindow()
         {
             InitializeComponent();
+
+            MainNavigation.MainFrameNav = MainFrame;
+            MainFrame.Navigate(new MainPage());
         }
     }
 }

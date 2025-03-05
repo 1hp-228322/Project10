@@ -31,5 +31,6 @@ namespace Wpfchik.Pages
             choice.SwitchTask();
             NumTask.Clear();
         }
+
     }
 }
